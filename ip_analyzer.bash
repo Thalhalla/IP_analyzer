@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# -ne 1 ]; then
+if [[ $# -ne 1 ]]; then
   # Print usage
   echo -n 'Error! wrong number of arguments'
   echo " [$#]"
@@ -25,7 +25,7 @@ echo D is ${D2B[$D]}
 BIG_NUM=${D2B[$A]}${D2B[$B]}${D2B[$C]}${D2B[$D]}
 
 echo "The binary form is $BIG_NUM"
-echo "The deciman form is $((2#$BIG_NUM))"
+echo "The decimal form is $((2#$BIG_NUM))"
 #printf '%d\n' "$((2#$BIG_NUM))"
 printf 'And the hexadecimal is %x\n' "$((2#$BIG_NUM))"
 
